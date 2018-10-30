@@ -8,9 +8,28 @@
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
 <title>Insert title here</title>
+<script type="text/javascript">
+$(document).ready(function()
+{ 
+	var searchCondition='${serachCondition}'
+	$('.table').DataTable({
+		"lengthMenu":[[5,7,-1],[5,7,"All"]],
+		"oSearch":{
+		"sSearch":searchCondition	
+			
+		}
+		
+	})
+	
+})
+
+
+
+</script>
 </head>
 <body>
 	<div class="container">
+	<b style="color:red;font-size1:11">List Of Products</b>
 		<table class="table table-striped" border="1">
 			<thead>
 				<tr>

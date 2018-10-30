@@ -6,23 +6,30 @@
 <!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
 <html>
 <head>
-<meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
 
-
-<%-- <link rel="stylesheet" href="<c:url value='/resource/css/navbar.css'></c:url>"> --%>
 <!-- jQuery library -->
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.0/jquery.min.js"></script>
-
-<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
 
 <!-- Latest compiled JavaScript -->
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
 
+<!-- JQuery -->
+<script src="http://code.jquery.com/jquery-2.2.4.js"></script>
+<script src= "href=https://cdn.datatables.net/1.10.19/css/jquery.dataTables.min.css"></script>
+<script src= "https://cdn.datatables.net/1.10.19/js/jquery.dataTables.min.js"></script>
+
 <link href="https://fonts.googleapis.com/css?family=Racing+Sans+One" rel="stylesheet">
+
+<link rel="stylesheet" href="<c:url value='/resource/css/navbar.css'></c:url>">
+<link rel="stylesheet" href="<c:url value='/resource/css/footer.css'></c:url>">
+
+<meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
+<meta name="viewport" content="width=device-width",initial-scale=1">
 <title>Insert title here</title>
 </head>
 <body>
-   <nav class="navbar navbar-default" id="navbardemo">
+   <nav class="navbar navbar-default navbar fixed-top" id="navbardemo">
   <div class="container-fluid">
     <!-- Brand and toggle get grouped for better mobile display -->
     <div class="navbar-header">
@@ -45,9 +52,10 @@
         <li class="dropdown">
           <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Select By Category <span class="caret"></span></a>
           <ul class="dropdown-menu">
-            <li><a href="#">Action</a></li>
-            <li><a href="#">Another action</a></li>
-            <li><a href="#">Something else here</a></li>
+<%--           <c:forEach items=${categories} var="c"> --%>
+<%--           <li><a href="<c:url value='/all/searchByCategory?searchCondition=${c.categoryname}'></c:url>"></a></li> --%>
+          
+<%--           </c:forEach> --%>
            
           </ul>
         </li>

@@ -1,7 +1,10 @@
 package com.niit.controller;
 
 
+
 import java.util.List;
+
+import javax.servlet.http.HttpSession;
 import javax.validation.Valid;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
@@ -16,6 +19,7 @@ import org.springframework.web.bind.annotation.RequestParam;
 @Controller
 public class ProductController {
 
+	private  ProductDao productDao;
 	@Autowired
 	private ProductService productService;
 	
@@ -26,9 +30,10 @@ public class ProductController {
 	}
 
 	@RequestMapping(value = "/all/getallproducts")
-	public String getAllProducts(Model model) {
-		List products = (List) productService.getAllProducts();
+	public String getAllProducts(Model model,HttpSession session) {
+		List <Product> products= productService.getAllProducts();
 		model.addAttribute("products", products);
+		session.setAttribute("categories", productService.getAllCategories());
 		return "listofproducts";
 	}
 
@@ -81,5 +86,14 @@ public class ProductController {
 		}
 		productService.updateProduct(product);
 		return "redirect:/all/getallproducts";
+	}
+	@RequestMapping(value = "/all/searchByCategory")
+	public String searchByCategory (@RequestParam String searchCondition,Model model) {
+		if( searchCondition.equals("All")) 
+			model.addAttribute(" searchCondition","");
+		else	
+			model.addAttribute(" searchCondition",searchCondition); 
+		model.addAttribute("productsList", productDao.getAllProducts());
+		return "listofproducts";
 	}
 }
