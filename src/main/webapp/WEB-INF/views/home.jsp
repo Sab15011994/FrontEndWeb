@@ -26,7 +26,7 @@
             </ol>
             <div class="carousel-inner" role="listbox">
                 <div class="item active">
-                    <img  class="img-thumbnail" src="<c:url value='/resource/images/Acer.jpg'></c:url>" alt="first slide" height="100%" width="100%">
+                    <img  class="img-thumbnail" src="<c:url value='/resource/images/Acer.jpg'></c:url>" alt="first slide" height="50%" width="50%">
                     <div class="container">
                         <div class="carousel-caption">
                             <h1>WELCOME TO THE CAR STORE</h1>
@@ -35,7 +35,7 @@
                     </div>
                 </div>
                 <div class="item">
-                    <img class="img-bordered" src="<c:url value='/resource/images/Asus.jpg'></c:url>" alt="Second slide" height="100%" width="100%">
+                    <img class="img-bordered" src="<c:url value='/resource/images/Asus.jpg'></c:url>" alt="Second slide" height="50%" width="50%">
                     <div class="container">
                         <div class="carousel-caption">
                             <h1>The Car Store.</h1>
@@ -44,7 +44,7 @@
                     </div>
                 </div>
                 <div class="item">
-                    <img class="img-bordered" src="<c:url value='/resource/images/Dell.jpg'></c:url>" alt="Third slide" height="100%" width="100%">
+                    <img class="img-bordered" src="<c:url value='/resource/images/Dell.jpg'></c:url>" alt="Third slide" height="50%" width="50%">
                     <div class="container">
                         <div class="carousel-caption">
                             <h1>The Car You Love</h1>
@@ -53,7 +53,7 @@
                     </div>
                 </div>
                  <div class="item">
-                    <img class="img-bordered" src="<c:url value='/resource/images/Gaming_Laptop.jpg'></c:url>" alt="forth slide" height="100%" width="100%">
+                    <img class="img-bordered" src="<c:url value='/resource/images/Gaming_Laptop.jpg'></c:url>" alt="forth slide" height="50%" width="50%">
                     <div class="container">
                         <div class="carousel-caption">
                             <h1>Any car can be a "cool" car</h1>
@@ -62,7 +62,7 @@
                     </div>
                 </div>
                 <div class="item">
-                    <img class="img-bordered"  src="<c:url value='/resource/images/Hp_Laptop.jpg'></c:url>" alt="forth slide" height="100%" width="100%">
+                    <img class="img-bordered"  src="<c:url value='/resource/images/Hp_Laptop.jpg'></c:url>" alt="forth slide" height="50%" width="50%">
                     <div class="container">
                         <div class="carousel-caption">
                             <h1>Any car can be a "cool" car</h1>
@@ -71,7 +71,7 @@
                     </div>
                 </div>
                 <div class="item">
-                    <img class="img-bordered" src="<c:url value='/resource/images/Lenovo.jpg'></c:url>" alt="forth slide" height="100%" width="100%">
+                    <img class="img-bordered" src="<c:url value='/resource/images/Lenovo.jpg'></c:url>" alt="forth slide" height="50%" width="100%">
                     <div class="container">
                         <div class="carousel-caption">
                             <h1>Any car can be a "cool" car</h1>
@@ -90,11 +90,70 @@
             </a>
         </div><!-- /.carousel -->
 
-
+          <div class="row">
+                    <div class="col-lg-4 col-sm-6">
+                       <div class="thumbnail">
+                   	     <img src="<c:url value='/resource/images/JBL.jpg'></c:url>"  width="100%" height="100%">
+                       </div>
+                       </div>
+                       <div class="col-lg-4 col-sm-6">
+                         <div class="thumbnail">
+                   		      <img src="<c:url value='/resource/images/SONY.jpg'></c:url>"  width="100%" height="100%">
+                            </div>
+                            </div>
+                            <div class="col-lg-4 col-sm-6">
+                           <div class="thumbnail">
+                   			     <img src="<c:url value='/resource/images/HP.jpg'></c:url>" width="38%" height="19%">
+                             </div>
+                             </div>
+                          <div class="col-lg-4 col-sm-6">
+                           <div class="thumbnail">
+                   				   <img src="<c:url value='/resource/images/JBL.jpg'></c:url>"  width="100%" height="100%">
+                             </div>
+                             </div>
+                             <div class="col-lg-4 col-sm-6">
+                             <div class="thumbnail">
+                   					     <img src="<c:url value='/resource/images/SONY.jpg'></c:url>"  width="100%" height="100%">
+                               </div>
+                               </div>
+                            <div class="col-lg-4 col-sm-6">
+                              <div class="thumbnail">
+                   						   <img src="<c:url value='/resource/images/HP.jpg'></c:url>" width="38%" height="19%">
+                                 </div>
+                                 </div>
+                                <div class="col-lg-4 col-sm-6">
+                                   <div class="thumbnail">
+                   		           <img src="<c:url value='/resource/images/JBL.jpg'></c:url>"  width="100%" height="100%">
+                                 </div>
+                                 </div>
+                                <div class="col-lg-4 col-sm-6">
+                                  <div class="thumbnail">
+                   		     	        <img src="<c:url value='/resource/images/SONY.jpg'></c:url>"  width="100%" height="100%">
+                                    </div>
+                                    </div>
+                                    <div class="col-lg-4 col-sm-6">
+                                       <div class="thumbnail">
+                   		     	        	 <img src="<c:url value='/resource/images/HP.jpg'></c:url>" width="38%" height="19%">
+                                      </div>
+                                      </div>
+                   		     	        	</div>
+                    
+                </div>
+         
 
 
 </div>
-<div class="footer">
+<div style="
+
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    background:#6cf;
+    color: white;
+    text-align: center;">
+
+
    <p>@ All Copy Rights Are Reserved</p>
 
 </div>

@@ -16,7 +16,7 @@
 
 <!-- JQuery -->
 <script src="http://code.jquery.com/jquery-2.2.4.js"></script>
-<script src= "href=https://cdn.datatables.net/1.10.19/css/jquery.dataTables.min.css"></script>
+<script src= "https://cdn.datatables.net/1.10.19/css/jquery.dataTables.min.css"></script>
 <script src= "https://cdn.datatables.net/1.10.19/js/jquery.dataTables.min.js"></script>
 
 <link href="https://fonts.googleapis.com/css?family=Racing+Sans+One" rel="stylesheet">
@@ -52,6 +52,9 @@
         <li class="dropdown">
           <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Select By Category <span class="caret"></span></a>
           <ul class="dropdown-menu">
+             <li><a href="#">Laptop</a></li>
+             <li><a href="#">Speakers</a></li>
+             <li><a href="#">Headphones</a></li>
 <%--           <c:forEach items=${categories} var="c"> --%>
 <%--           <li><a href="<c:url value='/all/searchByCategory?searchCondition=${c.categoryname}'></c:url>"></a></li> --%>
           
